@@ -1,0 +1,219 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #dedede;
+}
+
+.navbar {
+  max-width: 1240px;
+  min-height: 88px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.brand {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 44px;
+  height: 52px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-links a:hover {
+  color: #003087;
+}
+
+.chevron {
+  width: 8px;
+  height: 8px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.account-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.button {
+  border: none;
+  border-radius: 999px;
+  padding: 16px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-dark {
+  background: #000;
+  color: #fff;
+}
+
+.button-dark:hover {
+  background: #303030;
+}
+
+.button-light {
+  background: #edeff6;
+  color: #111;
+}
+
+.button-light:hover {
+  background: #dfe3ee;
+}
+
+.hero {
+  padding: 60px 24px 40px;
+  text-align: center;
+}
+
+.toggle {
+  display: inline-flex;
+  padding: 5px;
+  border-radius: 999px;
+  background: #edeff6;
+}
+
+.toggle button {
+  min-width: 126px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #606060;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.toggle button.selected {
+  background: #fff;
+  color: #000;
+}
+
+.hero h1 {
+  margin: 62px 0 18px;
+  font-size: clamp(52px, 7.2vw, 96px);
+  font-weight: 900;
+  letter-spacing: -5px;
+  line-height: 1.08;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: clamp(24px, 2.5vw, 32px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.25;
+}
+
+.description {
+  max-width: 1050px;
+  margin: 22px auto;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+@media (max-width: 960px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .logo {
+    width: 34px;
+    height: 42px;
+  }
+
+  .account-actions {
+    gap: 8px;
+  }
+
+  .button {
+    padding: 13px 19px;
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    gap: 8px;
+  }
+
+  .hero {
+    padding: 40px 18px;
+  }
+
+  .toggle button {
+    min-width: 112px;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .hero h1 {
+    margin-top: 44px;
+    letter-spacing: -3px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
